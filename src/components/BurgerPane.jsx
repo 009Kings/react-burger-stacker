@@ -9,7 +9,7 @@ class BurgerPane extends Component {
             <div className='pane'>
                 <h3>Make your own Burger!</h3>
                 <BurgerStack burgerBits={this.props.burgerBits} />
-                <ClearBurger />
+                <ClearBurger clear={this.props.clear} />
             </div>
         )
     }

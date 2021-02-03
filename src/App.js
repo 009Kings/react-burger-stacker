@@ -47,6 +47,7 @@ class App extends Component {
   // Clear da burger
   clearBurger = () => {
     console.log('No burger for you')
+    this.setState({ burgerBits: [] })
   }
 
   render() {
@@ -60,6 +61,7 @@ class App extends Component {
           />
           <BurgerPane 
             burgerBits={this.state.burgerBits} 
+            clear={this.clearBurger}
           />
         </div>
       </main>

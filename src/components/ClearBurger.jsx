@@ -5,7 +5,9 @@ class ClearBurger extends Component {
     render() {
         return (
             <div>
-                <button>Clear Burger</button>
+                <button onClick={this.props.clear}>
+                    Clear Burger
+                </button>
             </div>
         )
     }
